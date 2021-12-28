@@ -37,7 +37,7 @@ below config to `StylePtr<Black>()` and it'll turn off the LED.
 ```c
 
 Preset blade[] = {
-		{
+	{
 		// Soundfont Directory Name
 		"0-NO_BLADE",
 
