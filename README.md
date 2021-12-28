@@ -29,6 +29,41 @@ on cleanup and tweaking.
 
 # References and Notes
 
+## Example blade configuration
+
+Tip: Don't like the color of the activation switch your saber shipped with? Set the 4th "blade" in the
+below config to `StylePtr<Black>()` and it'll turn off the LED.
+
+```c
+
+Preset blade[] = {
+		{
+		// Soundfont Directory Name
+		"0-NO_BLADE",
+
+		// Leave blank - unused?
+		"",
+
+		// Primary Blade Style
+		StylePtr<Black>(),
+
+		// Cross-guard blade styles. Probably ignored unless you have a Krosgaard saber.
+		StylePtr<Black>(),
+		StylePtr<Black>(),
+
+		// Activation Switch
+		StylePtr<WHITE>(),
+
+		// Blade preset profile name - not sure how this is used, but should probably be unique.
+		"ProfileName"
+	}
+}
+
+```
+
+
+## Disable Main Button LED
+
 ##  Blade Settings
 
 * 1-SABERTRIO Fully Responsive RandomFlicker Blade Style ( DodgerBlue ) (animated)

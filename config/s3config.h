@@ -52,7 +52,7 @@ const unsigned int maxLedsPerStrip = 144;
 		// Soundfont Directory Name
 		"0-NO_BLADE",
 
-		// Leave blank - unused
+		// Leave blank - unused?
 		"",
 
 		// Primary Blade Style
