@@ -9,12 +9,22 @@ key changes listed below.
 
 Additonal information here is also for my own reference.
 
+# Key Files
+
+I suspect that outside of these files, the rest of ProffieOS is unchanged. As such this is where I'm focusing most of my attention
+on cleanup and tweaking.
+
+* [config/s3config.h](config/s3config.h)
+* [props/s3button_config.h](props/s3button_config.h)
 
 # Changelog
 
+## [config/s3config.h](config/s3config.h)
 * Lowered volume from 1750 to 450.
 * Disabled flickering effect on: Sabertrio, Dark Edition, The Dark, Vengeance, Temple Guardian, The Tragedy, Smooth Jedi, Smooth Grey, Smooth Fuzz.
 
+## [props/s3button_config.h](props/s3button_config.h)
+* (none yet)
 
 # References and Notes
 
