@@ -20,6 +20,7 @@ on cleanup and tweaking.
 # Changelog
 
 ## [config/s3config.h](config/s3config.h)
+* Cleaned up code formatting, indentation, etc.
 * Lowered volume from 1750 to 450.
 * Disabled flickering effect on: Sabertrio, Dark Edition, The Dark, Vengeance, Temple Guardian, The Tragedy, Smooth Jedi, Smooth Grey, Smooth Fuzz.
 
