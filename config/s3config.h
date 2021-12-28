@@ -3,7 +3,7 @@
 #include "proffieboard_v2_config.h"
 #define NUM_BLADES 4
 #define NUM_BUTTONS 2
-#define VOLUME 1750
+#define VOLUME 450
 const unsigned int maxLedsPerStrip = 144;
 #define CLASH_THRESHOLD_G 3.4
 #define ENABLE_AUDIO
@@ -41,7 +41,7 @@ Preset no_blade[] = {
 
 	//Fully Responsive RandomFlicker Blade Style ( DodgerBlue ) (animated)
     { "1-SABERTRIO", "",
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,DodgerBlue>,RotateColorsX<Variation,Rgb<0,20,128>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,150,0>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,DodgerBlue>,RotateColorsX<Variation,DodgerBlue>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,150,0>>,
 	Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,
 	AlphaL<Moccasin,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Int<10000>>>>,TrConcat<TrInstant,TransitionEffect<Rgb<255,150,0>,
 	Moccasin,TrInstant,TrFade<200>,EFFECT_LOCKUP_BEGIN>,TrFade<400>>,TrConcat<TrInstant,TransitionEffect<Moccasin,Rgb<255,150,0>,TrInstant,TrFade<200>,
@@ -54,10 +54,10 @@ Preset no_blade[] = {
 	AlphaL<Mix<BatteryLevel,Red,Green>,SmoothStep<BatteryLevel,Int<-10>>>,TrDelay<2000>,AlphaL<Mix<BatteryLevel,Red,Green>,SmoothStep<BatteryLevel,Int<-10>>>,
 	TrWipeIn<1000>>,EFFECT_BATTERY_LEVEL>>>(),
 	
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,DodgerBlue>,RotateColorsX<Variation,Rgb<0,20,128>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,DodgerBlue>,RotateColorsX<Variation,DodgerBlue>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
 	TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,
 	InOutTrL<TrWipe<300>,TrWipeIn<600>,Black>>>(),	
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,DodgerBlue>,RotateColorsX<Variation,Rgb<0,20,128>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,DodgerBlue>,RotateColorsX<Variation,DodgerBlue>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
 	TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,
 	InOutTrL<TrWipe<300>,TrWipeIn<600>,Black>>>(),
 
@@ -66,7 +66,7 @@ Preset no_blade[] = {
    
 	//Fully Responsive RandomFlicker Blade Style ( Red ) (animated)
 	{ "2-DARK_EDITION", "",
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<128,0,0>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,150,0>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Red>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,150,0>>,
 	Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,
 	AlphaL<Moccasin,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Int<10000>>>>,TrConcat<TrInstant,TransitionEffect<Rgb<255,150,0>,
 	Moccasin,TrInstant,TrFade<200>,EFFECT_LOCKUP_BEGIN>,TrFade<400>>,TrConcat<TrInstant,TransitionEffect<Moccasin,Rgb<255,150,0>,TrInstant,TrFade<200>,
@@ -79,10 +79,10 @@ Preset no_blade[] = {
 	TransitionEffectL<TrConcat<TrWipe<1000>,AlphaL<Mix<BatteryLevel,Red,Green>,SmoothStep<BatteryLevel,Int<-10>>>,TrDelay<2000>,AlphaL<Mix<BatteryLevel,Red,Green>,
 	SmoothStep<BatteryLevel,Int<-10>>>,TrWipeIn<1000>>,EFFECT_BATTERY_LEVEL>>>(),
 	
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<128,0,0>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Red>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
 	TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,
 	InOutTrL<TrWipe<300>,TrWipeIn<600>,Black>>>(),
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<128,0,0>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Red>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
 	TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,
 	InOutTrL<TrWipe<300>,TrWipeIn<600>,Black>>>(),
 	
@@ -141,7 +141,7 @@ Preset no_blade[] = {
 	
 	//Fully Responsive RandomFlicker Blade Style ( Red ) (original)
 	{ "5-THE_DARK","" ,
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<128,0,0>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,240,80>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Red>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,240,80>>,
 	Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<LemonChiffon,
 	Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Int<10000>>>>,TrConcat<TrInstant,TransitionEffect<Rgb<255,180,50>,
 	LemonChiffon,TrInstant,TrFade<200>,EFFECT_LOCKUP_BEGIN>,TrFade<400>>,TrConcat<TrInstant,TransitionEffect<LemonChiffon,Rgb<255,180,50>,TrInstant,
@@ -154,10 +154,10 @@ Preset no_blade[] = {
 	AlphaL<Mix<BatteryLevel,Red,Green>,SmoothStep<BatteryLevel,Int<-10>>>,TrDelay<2000>,AlphaL<Mix<BatteryLevel,Red,Green>,SmoothStep<BatteryLevel,Int<-10>>>,
 	TrWipeIn<1000>>,EFFECT_BATTERY_LEVEL>>>(),
 	
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<128,0,0>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Red>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
 	TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,
 	InOutTrL<TrWipe<300>,TrWipeIn<800>,Black>>>(),
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<128,0,0>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Red>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
 	TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,
 	InOutTrL<TrWipe<300>,TrWipeIn<800>,Black>>>(),
 	
@@ -166,7 +166,7 @@ Preset no_blade[] = {
 	
 	//Fully Responsive RandomFlicker Blade Style ( Red ) (animated)
 	{ "6-VENGEANCE","" ,
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<128,0,0>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,150,0>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Red>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,150,0>>,
 	Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<Moccasin,
 	Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Int<10000>>>>,TrConcat<TrInstant,TransitionEffect<Rgb<255,150,0>,
 	Moccasin,TrInstant,TrFade<200>,EFFECT_LOCKUP_BEGIN>,TrFade<400>>,TrConcat<TrInstant,TransitionEffect<Moccasin,Rgb<255,150,0>,TrInstant,TrFade<200>,
@@ -179,10 +179,10 @@ Preset no_blade[] = {
 	InOutTrL<TrWipe<300>,TrWipeIn<800>,Black>,TransitionEffectL<TrConcat<TrWipe<1000>,AlphaL<Mix<BatteryLevel,Red,Green>,SmoothStep<BatteryLevel,Int<-10>>>,
 	TrDelay<2000>,AlphaL<Mix<BatteryLevel,Red,Green>,SmoothStep<BatteryLevel,Int<-10>>>,TrWipeIn<1000>>,EFFECT_BATTERY_LEVEL>>>(),
 	
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<128,0,0>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Red>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
 	TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,
 	InOutTrL<TrWipe<300>,TrWipeIn<800>,Black>>>(),
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<128,0,0>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Red>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
 	TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,
 	InOutTrL<TrWipe<300>,TrWipeIn<800>,Black>>>(),
 	
@@ -279,7 +279,7 @@ Preset no_blade[] = {
 	
 	//Fully Responsive RandomFlicker Blade Style ( Gold ) (animated)
     { "10-TEMPLE_GUARDIAN", "",
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Rgb<180,130,0>>,RotateColorsX<Variation,Rgb<90,65,0>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,150,0>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Rgb<180,130,0>>,RotateColorsX<Variation,Rgb<180,130,0>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,150,0>>,
 	Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,
 	AlphaL<Moccasin,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Int<10000>>>>,TrConcat<TrInstant,TransitionEffect<Rgb<255,150,0>,
 	Moccasin,TrInstant,TrFade<200>,EFFECT_LOCKUP_BEGIN>,TrFade<400>>,TrConcat<TrInstant,TransitionEffect<Moccasin,Rgb<255,150,0>,TrInstant,TrFade<200>,
@@ -336,7 +336,7 @@ Preset no_blade[] = {
 	
 	//Fully Responsive AudioFlicker Canon Jedi/Sith Neopixel Lightsaber Styles ( Red ) (prequel)
 	{ "12-THE_TRAGEDY", "",
-    StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<128,0,0>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,225,0>>,Bump<Scale<BladeAngle<>,
+    StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Red>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,225,0>>,Bump<Scale<BladeAngle<>,
 	Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<NavajoWhite,Bump<Scale<BladeAngle<>,
 	Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Int<10000>>>>,TrConcat<TrInstant,TransitionEffect<Rgb<255,225,0>,NavajoWhite,TrInstant,TrFade<200>,
 	EFFECT_LOCKUP_BEGIN>,TrFade<400>>,TrConcat<TrInstant,TransitionEffect<NavajoWhite,Rgb<255,225,0>,TrInstant,TrFade<200>,EFFECT_LOCKUP_BEGIN>,TrFade<400>>,
@@ -352,12 +352,12 @@ Preset no_blade[] = {
 	AlphaL<Mix<BatteryLevel,Red,Green>,SmoothStep<BatteryLevel,Int<-10>>>,TrDelay<2000>,AlphaL<Mix<BatteryLevel,Red,Green>,
 	SmoothStep<BatteryLevel,Int<-10>>>,TrWipeIn<1000>>,EFFECT_BATTERY_LEVEL>>>(),
 	
-	StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<128,0,0>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
+	StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Red>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
 	TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,
 	TransitionEffectL<TrConcat<TrInstant,Stripes<3000,-3500,White,RandomPerLEDFlicker<Rgb<60,60,60>,Black>,BrownNoiseFlicker<White,Rgb<30,30,30>,200>,
 	RandomPerLEDFlicker<Rgb<80,80,80>,Rgb<30,30,30>>>,TrFade<800>>,EFFECT_IGNITION>,TransitionEffectL<TrConcat<TrInstant,HumpFlickerL<White,40>,TrFade<1000>>,EFFECT_RETRACTION>,
 	InOutTrL<TrWipe<300>,TrWipeIn<700>,Black>>>(),
-	StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<128,0,0>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
+	StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Red>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
 	TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,
 	TransitionEffectL<TrConcat<TrInstant,Stripes<3000,-3500,White,RandomPerLEDFlicker<Rgb<60,60,60>,Black>,BrownNoiseFlicker<White,Rgb<30,30,30>,200>,
 	RandomPerLEDFlicker<Rgb<80,80,80>,Rgb<30,30,30>>>,TrFade<800>>,EFFECT_IGNITION>,TransitionEffectL<TrConcat<TrInstant,HumpFlickerL<White,40>,TrFade<1000>>,EFFECT_RETRACTION>,
@@ -393,7 +393,7 @@ Preset no_blade[] = {
 	
 	//Fully Responsive RandomFlicker Blade Style ( Blue ) (original)
     { "14-SMOOTH_JEDI", "",
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Blue>,RotateColorsX<Variation,Rgb<0,0,128>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,240,80>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Blue>,RotateColorsX<Variation,Blue>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,240,80>>,
 	Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<LemonChiffon,
 	Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Int<10000>>>>,TrConcat<TrInstant,TransitionEffect<Rgb<255,180,50>,
 	LemonChiffon,TrInstant,TrFade<200>,EFFECT_LOCKUP_BEGIN>,TrFade<400>>,TrConcat<TrInstant,TransitionEffect<LemonChiffon,Rgb<255,180,50>,TrInstant,TrFade<200>,
@@ -406,10 +406,10 @@ Preset no_blade[] = {
 	InOutTrL<TrWipeSparkTip<White,300>,TrWipeIn<700>,Black>,TransitionEffectL<TrConcat<TrWipe<1000>,AlphaL<Mix<BatteryLevel,Red,Green>,
 	SmoothStep<BatteryLevel,Int<-10>>>,TrDelay<2000>,AlphaL<Mix<BatteryLevel,Red,Green>,SmoothStep<BatteryLevel,Int<-10>>>,TrWipeIn<1000>>,EFFECT_BATTERY_LEVEL>>>(),
 	
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Blue>,RotateColorsX<Variation,Rgb<0,0,128>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Blue>,RotateColorsX<Variation,Blue>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
 	TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,
 	InOutTrL<TrWipe<300>,TrWipeIn<700>,Black>>>(),
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Blue>,RotateColorsX<Variation,Rgb<0,0,128>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Blue>,RotateColorsX<Variation,Blue>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
 	TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,
 	InOutTrL<TrWipe<300>,TrWipeIn<700>,Black>>>(),
 	
@@ -418,7 +418,7 @@ Preset no_blade[] = {
 		
 	//Fully Responsive AudioFlicker Canon Jedi/Sith Neopixel Lightsaber Styles ( Amber/Gold ) (sequel)
 	{ "15-SMOOTH_GREY", "",
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Rgb<255,130,0>>,RotateColorsX<Variation,Rgb<90,65,0>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Azure>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Rgb<255,130,0>>,RotateColorsX<Variation,Rgb<255,130,0>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Azure>,
 	Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<White,
 	Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Int<10000>>>>,TrConcat<TrInstant,TransitionEffect<Azure,White,TrInstant,
 	TrFade<200>,EFFECT_LOCKUP_BEGIN>,TrFade<400>>,TrConcat<TrInstant,TransitionEffect<White,Azure,TrInstant,TrFade<200>,EFFECT_LOCKUP_BEGIN>,TrFade<400>>,
@@ -430,10 +430,10 @@ Preset no_blade[] = {
 	TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipeSparkTip<White,300>,TrWipeIn<700>,Black>,TransitionEffectL<TrConcat<TrWipe<1000>,AlphaL<Mix<BatteryLevel,
 	Red,Green>,SmoothStep<BatteryLevel,Int<-10>>>,TrDelay<2000>,AlphaL<Mix<BatteryLevel,Red,Green>,SmoothStep<BatteryLevel,Int<-10>>>,TrWipeIn<1000>>,EFFECT_BATTERY_LEVEL>>>(),
 	
-    StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,Rgb<255,130,0>>,RotateColorsX<Variation,Rgb<90,65,0>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
+    StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,Rgb<255,130,0>>,RotateColorsX<Variation,Rgb<255,130,0>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
 	TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,
 	InOutTrL<TrWipe<300>,TrWipeIn<700>,Black>>>(),
-	StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,Rgb<255,130,0>>,RotateColorsX<Variation,Rgb<90,65,0>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
+	StylePtr<Layers<AudioFlicker<RotateColorsX<Variation,Rgb<255,130,0>>,RotateColorsX<Variation,Rgb<255,130,0>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
 	TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,
 	InOutTrL<TrWipe<300>,TrWipeIn<700>,Black>>>(),
 	
@@ -442,7 +442,7 @@ Preset no_blade[] = {
 	
 	//Fully Responsive RandomFlicker Blade Style ( Purple ) (prequel)
 	{ "16-SMOOTH_FUZZ", "",
-    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Rgb<210,0,210>>,RotateColorsX<Variation,Rgb<42,0,110>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,225,0>>,
+    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Rgb<255,0,255>>,RotateColorsX<Variation,Rgb<255,0,255>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,225,0>>,
 	Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<NavajoWhite,
 	Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Int<10000>>>>,TrConcat<TrInstant,TransitionEffect<Rgb<255,225,0>,
 	NavajoWhite,TrInstant,TrFade<200>,EFFECT_LOCKUP_BEGIN>,TrFade<400>>,TrConcat<TrInstant,TransitionEffect<NavajoWhite,Rgb<255,225,0>,TrInstant,TrFade<200>,
@@ -455,10 +455,10 @@ Preset no_blade[] = {
 	TrWipeIn<900>,Black>,TransitionEffectL<TrConcat<TrWipe<1000>,AlphaL<Mix<BatteryLevel,Red,Green>,SmoothStep<BatteryLevel,Int<-10>>>,
 	TrDelay<2000>,AlphaL<Mix<BatteryLevel,Red,Green>,SmoothStep<BatteryLevel,Int<-10>>>,TrWipeIn<1000>>,EFFECT_BATTERY_LEVEL>>>(),
 	
-	StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Rgb<210,0,210>>,RotateColorsX<Variation,Rgb<42,0,110>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
+	StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Rgb<255,0,255>>,RotateColorsX<Variation,Rgb<255,0,255>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
 	TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,
 	InOutTrL<TrWipe<300>,TrWipeIn<700>,Black>>>(),
-	StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Rgb<210,0,210>>,RotateColorsX<Variation,Rgb<42,0,110>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
+	StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Rgb<255,0,255>>,RotateColorsX<Variation,Rgb<255,0,255>>>,ResponsiveLightningBlockL<AlphaL<Red,Int<0>>,
 	TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,
 	InOutTrL<TrWipe<300>,TrWipeIn<700>,Black>>>(),
 	
