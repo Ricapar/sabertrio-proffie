@@ -64,6 +64,18 @@ Preset blade[] = {
 
 ## Disable Main Button LED
 
+Did you get one of Sabertrio's RTS (ready-to-ship) sabers, but don't like the activation switch
+LED color that it shipped with? Or did you customize a saber but then regret the choice of LED?
+
+In Sabertrio's configuration, the power button's LED is wired in as the 4th "blade" on the
+Proffieboard. You can disable the LED by switching the 4th blade style in the `blades[]` array
+from `StylePtr<WHITE>()` to `StylePtr<Black>()`.
+
+You'll have to do this per blade style. You can, of course, also choose to leave it on with
+some blade styles and off with others. (That's what I did - I left it on for the blade styles
+that happen to match the LED color, and off for the others!)
+
+
 ##  Blade Settings
 
 * 1-SABERTRIO Fully Responsive RandomFlicker Blade Style ( DodgerBlue ) (animated)
