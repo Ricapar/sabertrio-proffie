@@ -3,7 +3,7 @@
 This repository only includes a copy of the GPL'd ProffieOS code, including Sabertrio's modifications to the blade
 profiles and button configurations. It does not include any soundfonts.
 
-The code as I got it off of the saber's SD card can be found on the (sabertrio-backup)[https://github.com/Ricapar/sabertrio-proffie/tree/sabertrio-backup]
+The code as I got it off of the saber's SD card can be found on the [sabertrio-backup](https://github.com/Ricapar/sabertrio-proffie/tree/sabertrio-backup)
 branch of this repo. My own changes can be found on the master branch. Feel free to do a diff between the two to see what I've changed. I'll try to keep
 key changes listed below.
 
